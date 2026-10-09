@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="mk" data-lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тим — Алба, Кафе-Пекара</title>
+<meta name="description" content="Луѓето зад Алба — пекари, бариста, слаткари и тимот кој секое утро подготвува свежо.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="Алба — почетна">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+        <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+        <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+        <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+        <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Смени јазик / Switch language">MK / EN</button>
+      <button class="burger" id="burger" aria-label="Мени" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <ul class="nav-links" id="mobile-links" style="display:none; flex-direction:column; padding:0 28px 20px; gap:16px;">
+    <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+    <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+    <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+    <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+    <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+  </ul>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" class="i18n-mk">Почетна</a><a href="index.html" class="i18n-en">Home</a> / <span class="i18n-mk">Тим</span><span class="i18n-en">Team</span></div>
+    <div class="eyebrow"><span class="i18n-mk">Тим</span><span class="i18n-en">Team</span></div>
+    <h1 class="i18n-mk">Осум луѓе, една рерна, секое утро во 5.</h1>
+    <h1 class="i18n-en">Eight people, one oven, every morning at 5.</h1>
+    <p class="i18n-mk">Тимот на Алба расте заедно со пекарата — од двајца во 2012 до осум занаетчии денес.</p>
+    <p class="i18n-en">The Alba team has grown alongside the bakery — from two people in 2012 to eight craftspeople today.</p>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="team" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="team-grid-full">
+
+      <div class="team-card">
+        <div class="avatar">ВЈ</div>
+        <h4>Верица Јовановска</h4>
+        <span class="team-role i18n-mk">Основач и главен пекар</span>
+        <span class="team-role i18n-en">Founder & head baker</span>
+        <p class="team-bio i18n-mk">Го учеше занаетот од својата баба и ја отвори Алба во 2012 година. Денес го надгледува секој ражен леб пред да излезе од рерната.</p>
+        <p class="team-bio i18n-en">Learned the craft from her grandmother and opened Alba in 2012. Still checks every rye loaf before it leaves the oven.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="avatar">ДТ</div>
+        <h4>Дарко Трајковски</h4>
+        <span class="team-role i18n-mk">Мајстор за кафе</span>
+        <span class="team-role i18n-en">Head roaster & barista</span>
+        <p class="team-bio i18n-mk">Ги избира и ги пржи зрната во малата пржилница зад пекарата. Патува двапати годишно за да ги избере фармите директно.</p>
+        <p class="team-bio i18n-en">Sources and roasts the beans in the micro-roastery out back. Travels twice a year to select farms directly.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="avatar">МС</div>
+        <h4>Марија Стојанова</h4>
+        <span class="team-role i18n-mk">Шеф за слатки пецива</span>
+        <span class="team-role i18n-en">Pastry chef</span>
+        <p class="team-bio i18n-mk">Одговорна за штрудлите, колачите и дневниот специјалитет. Секој месец смислува по еден нов десерт.</p>
+        <p class="team-bio i18n-en">Responsible for strudels, cakes and the daily special. Invents a new dessert every month.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="avatar">ИН</div>
+        <h4>Игор Николовски</h4>
+        <span class="team-role i18n-mk">Услуга на гости</span>
+        <span class="team-role i18n-en">Front of house</span>
+        <p class="team-bio i18n-mk">Прво лице кое ќе те пречека наутро со насмевка и препорака за тоа што е најсвежо тој ден.</p>
+        <p class="team-bio i18n-en">The first face you'll see in the morning, with a smile and a recommendation for what's freshest that day.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="avatar">АП</div>
+        <h4>Ана Петровска</h4>
+        <span class="team-role i18n-mk">Пекар-помошник</span>
+        <span class="team-role i18n-en">Assistant baker</span>
+        <p class="team-bio i18n-mk">Ја отвора пекарата во 5 наутро и е задолжена за првата серија леб на квасец.</p>
+        <p class="team-bio i18n-en">Opens the bakery at 5am and handles the first batch of sourdough bread.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="avatar">СЃ</div>
+        <h4>Стефан Ѓорѓиевски</h4>
+        <span class="team-role i18n-mk">Бариста</span>
+        <span class="team-role i18n-en">Barista</span>
+        <p class="team-bio i18n-mk">Победник на локално бариста натпреварување во 2024 година. Го обучува новиот персонал за латте-арт.</p>
+        <p class="team-bio i18n-en">Winner of a local barista competition in 2024. Trains new staff in latte art.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="avatar">ЕК</div>
+        <h4>Елена Костовска</h4>
+        <span class="team-role i18n-mk">Менаџер за набавки</span>
+        <span class="team-role i18n-en">Sourcing manager</span>
+        <p class="team-bio i18n-mk">Ги избира брашната, млекото и локалните добавувачи. Работи директно со фарми во околината на Скопје.</p>
+        <p class="team-bio i18n-en">Selects the flours, milk and local suppliers. Works directly with farms around Skopje.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="avatar">ФБ</div>
+        <h4>Филип Богоески</h4>
+        <span class="team-role i18n-mk">Викенд пекар и обуки</span>
+        <span class="team-role i18n-en">Weekend baker & workshops</span>
+        <p class="team-bio i18n-mk">Ги води месечните работилници за домашно печење и ги пече викенд-специјалитетите.</p>
+        <p class="team-bio i18n-en">Leads the monthly home-baking workshops and bakes the weekend specials.</p>
+      </div>
+
+    </div>
+
+    <div class="section-cta reveal">
+      <a href="index.html#contact" class="btn btn-outline on-light" style="border-color:var(--line); color:var(--ink);"><span class="i18n-mk">Сакаш да работиш со нас? Јави се →</span><span class="i18n-en">Want to join us? Get in touch →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap footer-grid">
+    <a href="index.html" class="logo" style="font-size:19px;">
+      <svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <ul class="footer-links">
+      <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+      <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+      <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+      <li><a href="cookie-policy.html" class="i18n-mk">Политика за колачиња</a><a href="cookie-policy.html" class="i18n-en">Cookie policy</a></li>
+    </ul>
+    <div class="footer-small">
+      © 2026 Алба. <span class="i18n-mk">Сите права задржани.</span><span class="i18n-en">All rights reserved.</span>
+      <span class="version-badge"> · v1.6.0</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookie-banner" role="dialog" aria-live="polite">
+  <h4 class="i18n-mk">Користиме колачиња 🍪</h4>
+  <h4 class="i18n-en">We use cookies 🍪</h4>
+  <p class="i18n-mk">Оваа страница користи колачиња за основно функционирање и за анализа на посетеноста. Можете да ги прифатите сите или само неопходните. Повеќе во <a href="cookie-policy.html" >Политиката за колачиња</a>.</p>
+  <p class="i18n-en">This site uses cookies for basic functionality and traffic analysis. You can accept all cookies or only the necessary ones. More in our <a href="cookie-policy.html" >Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookie-accept"><span class="i18n-mk">Прифати сè</span><span class="i18n-en">Accept all</span></button>
+    <button class="btn btn-outline on-light" id="cookie-necessary" ><span class="i18n-mk">Само неопходни</span><span class="i18n-en">Necessary only</span></button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

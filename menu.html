@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="mk" data-lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мени — Алба, Кафе-Пекара</title>
+<meta name="description" content="Целото мени на Алба — леб, пецива, кафе, топли и ладни напитоци, појадоци и торти.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="Алба — почетна">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+        <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+        <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+        <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+        <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Смени јазик / Switch language">MK / EN</button>
+      <button class="burger" id="burger" aria-label="Мени" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <ul class="nav-links" id="mobile-links" style="display:none; flex-direction:column; padding:0 28px 20px; gap:16px;">
+    <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+    <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+    <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+    <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+    <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+  </ul>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-images">
+      <img src="menu1.jpg" alt="Алба мени" width="230" height="300">
+      <img src="menu2.jpg" alt="Алба пецива" width="230" height="300">
+    </div>
+    <div class="breadcrumb"><a href="index.html" class="i18n-mk">Почетна</a><a href="index.html" class="i18n-en">Home</a> / <span class="i18n-mk">Мени</span><span class="i18n-en">Menu</span></div>
+    <div class="eyebrow"><span class="i18n-mk">Целото мени</span><span class="i18n-en">Full menu</span></div>
+    <h1 class="i18n-mk">Секое утро свежо, секој ден исто добро.</h1>
+    <h1 class="i18n-en">Fresh every morning, just as good every day.</h1>
+    <p class="i18n-mk">25+ производи во 6 категории — од леб на квасец до колачи, топли и ладни напитоци.</p>
+    <p class="i18n-en">25+ products across 6 categories — from sourdough bread to cakes, hot and cold drinks.</p>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="menu">
+  <div class="wrap">
+
+    <div class="menu-filter" id="menu-filter">
+      <button class="filter-btn active" data-filter="all"><span class="i18n-mk">Сè</span><span class="i18n-en">All</span></button>
+      <button class="filter-btn" data-filter="bread"><span class="i18n-mk">Леб</span><span class="i18n-en">Bread</span></button>
+      <button class="filter-btn" data-filter="pastry"><span class="i18n-mk">Пецива</span><span class="i18n-en">Pastries</span></button>
+      <button class="filter-btn" data-filter="breakfast"><span class="i18n-mk">Појадок</span><span class="i18n-en">Breakfast</span></button>
+      <button class="filter-btn" data-filter="cake"><span class="i18n-mk">Торти и колачи</span><span class="i18n-en">Cakes</span></button>
+      <button class="filter-btn" data-filter="coffee"><span class="i18n-mk">Кафе</span><span class="i18n-en">Coffee</span></button>
+      <button class="filter-btn" data-filter="drinks"><span class="i18n-mk">Останати напитоци</span><span class="i18n-en">Other drinks</span></button>
+    </div>
+
+    <div class="menu-cats-full">
+
+      <div class="menu-cat" data-category="bread">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 18h16M6 18V9a6 6 0 0 1 12 0v9" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Леб</span><span class="i18n-en">Bread</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">'Ржан леб</div><div class="menu-item-name i18n-en">Rye sourdough</div>
+            <div class="menu-item-desc i18n-mk">700 г, 'ржано и пченично брашно</div>
+            <div class="menu-item-desc i18n-en">700 g, rye and wheat flour</div>
+          </div>
+          <div class="menu-item-price">160 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Домашен бел леб</div><div class="menu-item-name i18n-en">Country white loaf</div>
+            <div class="menu-item-desc i18n-mk">800 г, со крцкава кора</div>
+            <div class="menu-item-desc i18n-en">800 g, crackling crust</div>
+          </div>
+          <div class="menu-item-price">120 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Фокача со рузмарин</div><div class="menu-item-name i18n-en">Rosemary focaccia</div>
+            <div class="menu-item-desc i18n-mk">Маслиново масло, морска сол</div>
+            <div class="menu-item-desc i18n-en">Olive oil, sea salt</div>
+          </div>
+          <div class="menu-item-price">140 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Леб со тиква</div><div class="menu-item-name i18n-en">Pumpkin bread</div>
+            <div class="menu-item-desc i18n-mk">Сезонски, со семки од тиква</div>
+            <div class="menu-item-desc i18n-en">Seasonal, with pumpkin seeds</div>
+          </div>
+          <div class="menu-item-price">150 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Интегрален леб</div><div class="menu-item-name i18n-en">Whole-wheat loaf</div>
+            <div class="menu-item-desc i18n-mk">100% интегрално брашно</div>
+            <div class="menu-item-desc i18n-en">100% whole-wheat flour</div>
+          </div>
+          <div class="menu-item-price">130 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Багета</div><div class="menu-item-name i18n-en">Baguette</div>
+            <div class="menu-item-desc i18n-mk">250 г, Класична француска</div>
+            <div class="menu-item-desc i18n-en">250 g, Classic French</div>
+          </div>
+          <div class="menu-item-price">80 ден</div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-category="pastry">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V4Z" stroke="var(--ink-3)" stroke-width="1.6"/><path d="M17 6h2a2 2 0 0 1 0 4h-2M6 20h9" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Пецива</span><span class="i18n-en">Pastries</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Путер кроасан</div><div class="menu-item-name i18n-en">Butter croissant</div>
+            <div class="menu-item-desc i18n-mk">Класичен, 27 слоја</div>
+            <div class="menu-item-desc i18n-en">Classic, 27 layers</div>
+          </div>
+          <div class="menu-item-price">90 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Чоколаден кроасан</div><div class="menu-item-name i18n-en">Chocolate croissant</div>
+            <div class="menu-item-desc i18n-mk">Темно чоколадо 70%</div>
+            <div class="menu-item-desc i18n-en">70% dark chocolate</div>
+          </div>
+          <div class="menu-item-price">100 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Штрудла со јаболка</div><div class="menu-item-name i18n-en">Apple strudel</div>
+            <div class="menu-item-desc i18n-mk">Домашно лиснато тесто</div>
+            <div class="menu-item-desc i18n-en">Hand-stretched dough</div>
+          </div>
+          <div class="menu-item-price">100 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Ѓеврек со сусам</div><div class="menu-item-name i18n-en">Sesame simit</div>
+            <div class="menu-item-desc i18n-mk">Печен</div>
+            <div class="menu-item-desc i18n-en">Baked</div>
+          </div>
+          <div class="menu-item-price">60 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Пита со сирење</div><div class="menu-item-name i18n-en">Cheese pie slice</div>
+            <div class="menu-item-desc i18n-mk">Домашно сирење, лиснато тесто</div>
+            <div class="menu-item-desc i18n-en">Farmer's cheese, filo dough</div>
+          </div>
+          <div class="menu-item-price">85 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Пита со тиква</div><div class="menu-item-name i18n-en">Pumpkin pie slice</div>
+            <div class="menu-item-desc i18n-mk">Сезонска, слатка</div>
+            <div class="menu-item-desc i18n-en">Seasonal, sweet</div>
+          </div>
+          <div class="menu-item-price">85 ден</div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-category="breakfast">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 16 0" stroke="var(--ink-3)" stroke-width="1.6"/><path d="M3 12h18M8 12V9M16 12V9" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Појадоци и сендвичи</span><span class="i18n-en">Breakfast & sandwiches</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Алба појадок</div><div class="menu-item-name i18n-en">The Alba breakfast</div>
+            <div class="menu-item-desc i18n-mk">Јајца, сирење, маслинки, домашен леб</div>
+            <div class="menu-item-desc i18n-en">Eggs, cheese, olives, house bread</div>
+          </div>
+          <div class="menu-item-price">200 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Авокадо тост</div><div class="menu-item-name i18n-en">Avocado toast</div>
+            <div class="menu-item-desc i18n-mk">Интегрален леб, домати</div>
+            <div class="menu-item-desc i18n-en">Whole-wheat bread, tomatoes</div>
+          </div>
+          <div class="menu-item-price">180 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Сендвич со пршута</div><div class="menu-item-name i18n-en">Prosciutto sandwich</div>
+            <div class="menu-item-desc i18n-mk">Багета, путер, корнишони</div>
+            <div class="menu-item-desc i18n-en">Baguette, butter, cornichons</div>
+          </div>
+          <div class="menu-item-price">170 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Гранола со јогурт</div><div class="menu-item-name i18n-en">Granola with yogurt</div>
+            <div class="menu-item-desc i18n-mk">Домашна гранола, сезонско овошје</div>
+            <div class="menu-item-desc i18n-en">House granola, seasonal fruit</div>
+          </div>
+          <div class="menu-item-price">150 ден</div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-category="cake">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 20h16M5 20V12a7 7 0 0 1 14 0v8" stroke="var(--ink-3)" stroke-width="1.6"/><path d="M9 12v-2M12 12V8M15 12v-2" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Торти и колачи</span><span class="i18n-en">Cakes & desserts</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Чизкејк</div><div class="menu-item-name i18n-en">Cheesecake</div>
+            <div class="menu-item-desc i18n-mk">Класичен, со шумско овошје</div>
+            <div class="menu-item-desc i18n-en">Classic, with forest berries</div>
+          </div>
+          <div class="menu-item-price">160 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Чоколадна торта</div><div class="menu-item-name i18n-en">Chocolate cake</div>
+            <div class="menu-item-desc i18n-mk">Темно чоколадо</div>
+            <div class="menu-item-desc i18n-en">Dark chocolate</div>
+          </div>
+          <div class="menu-item-price">150 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Тартар со лимон</div><div class="menu-item-name i18n-en">Lemon tart</div>
+            <div class="menu-item-desc i18n-mk">Свеж лимонов крем</div>
+            <div class="menu-item-desc i18n-en">Fresh lemon curd</div>
+          </div>
+          <div class="menu-item-price">140 ден</div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-category="coffee">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z" stroke="var(--ink-3)" stroke-width="1.6"/><path d="M17 11h2a2 2 0 0 1 0 4h-2M8 4c-1 1-1 2 0 3M12 4c-1 1-1 2 0 3" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Кафе</span><span class="i18n-en">Coffee</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name">Espresso</div>
+            <div class="menu-item-desc i18n-mk">Сопствена пржилница</div>
+            <div class="menu-item-desc i18n-en">Our own roast</div>
+          </div>
+          <div class="menu-item-price">70 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name">Double Espresso</div>
+            <div class="menu-item-desc i18n-mk">За посилно будење</div>
+            <div class="menu-item-desc i18n-en">For a stronger wake-up</div>
+          </div>
+          <div class="menu-item-price">90 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name">Flat White</div>
+            <div class="menu-item-desc i18n-mk">Со млеко од локална фарма</div>
+            <div class="menu-item-desc i18n-en">Local farm milk</div>
+          </div>
+          <div class="menu-item-price">110 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name">Cappuccino</div>
+            <div class="menu-item-desc i18n-mk">Кадифена пена</div>
+            <div class="menu-item-desc i18n-en">Velvety foam</div>
+          </div>
+          <div class="menu-item-price">100 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Филтер кафе</div><div class="menu-item-name i18n-en">Filter coffee</div>
+            <div class="menu-item-desc i18n-mk">Дневен избор на зрна</div>
+            <div class="menu-item-desc i18n-en">Daily bean selection</div>
+          </div>
+          <div class="menu-item-price">90 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Ладно кафе</div><div class="menu-item-name i18n-en">Iced coffee</div>
+            <div class="menu-item-desc i18n-mk">Ладно подготвено</div>
+            <div class="menu-item-desc i18n-en">Cold-brewed</div>
+          </div>
+          <div class="menu-item-price">110 ден</div>
+        </div>
+      </div>
+
+      <div class="menu-cat" data-category="drinks">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M6 3h12l-1.5 15a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2L6 3Z" stroke="var(--ink-3)" stroke-width="1.6"/><path d="M5 8h14" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Останати напитоци</span><span class="i18n-en">Other drinks</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Чај (повеќе видови)</div><div class="menu-item-name i18n-en">Tea (several kinds)</div>
+            <div class="menu-item-desc i18n-mk">Билен, зелен, црн</div>
+            <div class="menu-item-desc i18n-en">Herbal, green, black</div>
+          </div>
+          <div class="menu-item-price">70 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Топло чоколадо</div><div class="menu-item-name i18n-en">Hot chocolate</div>
+            <div class="menu-item-desc i18n-mk">Темно чоколадо, какао</div>
+            <div class="menu-item-desc i18n-en">Dark chocolate, cacao</div>
+          </div>
+          <div class="menu-item-price">110 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Свежо цеден портокал</div><div class="menu-item-name i18n-en">Fresh orange juice</div>
+            <div class="menu-item-desc i18n-mk">Свежо исцеден</div>
+            <div class="menu-item-desc i18n-en">freshly squeezed</div>
+          </div>
+          <div class="menu-item-price">120 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Домашна лимонада</div><div class="menu-item-name i18n-en">House lemonade</div>
+            <div class="menu-item-desc i18n-mk">Со свежа нане</div>
+            <div class="menu-item-desc i18n-en">With fresh mint</div>
+          </div>
+          <div class="menu-item-price">110 ден</div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="menu-note">
+      <span class="i18n-mk">Имате алергии или прашања за состојките? Контактирајте нè на страницата за </span><span class="i18n-en">Have allergies or ingredient questions? Reach us on the </span><a href="index.html#contact"><span class="i18n-mk">контакт</span><span class="i18n-en">contact</span></a><span class="i18n-mk">.</span><span class="i18n-en"> page.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap footer-grid">
+    <a href="index.html" class="logo" style="font-size:19px;">
+      <svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <ul class="footer-links">
+      <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+      <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+      <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+      <li><a href="cookie-policy.html" class="i18n-mk">Политика за колачиња</a><a href="cookie-policy.html" class="i18n-en">Cookie policy</a></li>
+    </ul>
+    <div class="footer-small">
+      © 2026 Алба. <span class="i18n-mk">Сите права задржани.</span><span class="i18n-en">All rights reserved.</span>
+      <span class="version-badge"> · v1.6.0</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookie-banner" role="dialog" aria-live="polite">
+  <h4 class="i18n-mk">Користиме колачиња 🍪</h4>
+  <h4 class="i18n-en">We use cookies 🍪</h4>
+  <p class="i18n-mk">Оваа страница користи колачиња за основно функционирање и за анализа на посетеноста. Можете да ги прифатите сите или само неопходните. Повеќе во <a href="cookie-policy.html" >Политиката за колачиња</a>.</p>
+  <p class="i18n-en">This site uses cookies for basic functionality and traffic analysis. You can accept all cookies or only the necessary ones. More in our <a href="cookie-policy.html" >Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookie-accept"><span class="i18n-mk">Прифати сè</span><span class="i18n-en">Accept all</span></button>
+    <button class="btn btn-outline on-light" id="cookie-necessary" ><span class="i18n-mk">Само неопходни</span><span class="i18n-en">Necessary only</span></button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Menu category filter (only on menu.html)
+  const filterBtns = document.querySelectorAll('#menu-filter .filter-btn');
+  const cats = document.querySelectorAll('.menu-cat[data-category]');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cats.forEach(cat => {
+        cat.hidden = !(filter === 'all' || cat.dataset.category === filter);
+      });
+    });
+  });
+</script>
+</body>
+</html>

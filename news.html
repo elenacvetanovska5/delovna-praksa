@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="mk" data-lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Новости — Алба, Кафе-Пекара</title>
+<meta name="description" content="Сите новости од Алба — нови производи, работилници и вести од пекарата.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="Алба — почетна">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+        <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+        <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+        <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+        <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Смени јазик / Switch language">MK / EN</button>
+      <button class="burger" id="burger" aria-label="Мени" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <ul class="nav-links" id="mobile-links" style="display:none; flex-direction:column; padding:0 28px 20px; gap:16px;">
+    <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+    <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+    <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+    <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+    <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+  </ul>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" class="i18n-mk">Почетна</a><a href="index.html" class="i18n-en">Home</a> / <span class="i18n-mk">Новости</span><span class="i18n-en">News</span></div>
+    <div class="eyebrow"><span class="i18n-mk">Новости</span><span class="i18n-en">News</span></div>
+    <h1 class="i18n-mk">Од фурната, до тебе.</h1>
+    <h1 class="i18n-en">From the oven, to you.</h1>
+    <p class="i18n-mk">Сè што се случува во Алба — нови производи, работилници и вести од пекарата.</p>
+    <p class="i18n-en">Everything happening at Alba — new products, workshops and news from the bakery.</p>
+  </div>
+</section>
+
+<!-- ================= NEWS GRID ================= -->
+<section class="blog" style="padding-top:56px;">
+  <div class="wrap">
+    <div class="blog-grid">
+      <article class="post">
+        <div class="post-media"><img src="news1.jpg" alt="Нов сезонски специјалитет: леб со тиква" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">12.07.2026</span>
+          <h3 class="i18n-mk">Нов сезонски специјалитет: леб со тиква</h3>
+          <h3 class="i18n-en">New seasonal special: pumpkin bread</h3>
+          <p class="i18n-mk">Од оваа недела воведуваме леб со печена тиква и семки од тиква, достапен само во есенските месеци.</p>
+          <p class="i18n-en">Starting this week we're introducing roasted pumpkin bread with pumpkin seeds, available only in the autumn months.</p>
+          <div class="post-full" id="post-full-1">
+            <p class="i18n-mk">Тестото се меси со пире од печена тиква, а одозгора се посипува со препечени семки од тиква и сусам. Лебот е сладок и одлично се вклопува со путер и мед. Достапен е секој ден, во ограничена количина од по 25 парчиња, се додека трае сезоната на тиква — вообичаено од средина на септември до крајот на ноември.</p>
+            <p class="i18n-en">The dough is mixed with roasted pumpkin purée, then topped with toasted pumpkin seeds and a sesame blend. The bread is sweet, and pairs perfectly with butter or honey. Available daily in a limited batch of 25 loaves, for as long as pumpkin season lasts — usually mid-September through late November.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-1">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-media"><img src="news2.jpg" alt="Работилница: печење домашен леб" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">28.06.2026</span>
+          <h3 class="i18n-mk">Работилница: печење домашен леб</h3>
+          <h3 class="i18n-en">Workshop: baking bread at home</h3>
+          <p class="i18n-mk">Секоја последна сабота во месецот организираме работилница за квасец и домашно печење, со ограничен број на места.</p>
+          <p class="i18n-en">Every last Saturday of the month we host a sourdough & home-baking workshop, with limited spots.</p>
+          <div class="post-full" id="post-full-2">
+            <p class="i18n-mk">Работилницата трае околу три часа и вклучува подготовка на сопствен квасец за носење дома, замесување и обликување леб, како и објаснување на процесот на ферментација. Учеството чини 900 денари по лице и вклучува сите состојки, материјали и кафе или чај. Групата е ограничена на 10 луѓе за да секој добие лично внимание. Пријавување преку контакт формата на почетната страница или на телефонскиот број наведен во делот „Контакт“.</p>
+            <p class="i18n-en">The workshop runs about three hours and covers preparing your own sourdough starter to take home, kneading and shaping bread, and understanding fermentation. Participation costs 900 denars per person and includes all ingredients, materials, and coffee or tea. The group is capped at 10 people for hands-on attention. Sign up via the contact form on the home page or the phone number listed in the Contact section.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-2">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-media"><img src="news3.jpg" alt="Алба сега со сопствена пржилница" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">03.06.2026</span>
+          <h3 class="i18n-mk">Алба сега со сопствена пржилница</h3>
+          <h3 class="i18n-en">Alba now roasts its own coffee</h3>
+          <p class="i18n-mk">По две години подготовка, отворивме мала пржилница за кафе во дворот на пекарата.</p>
+          <p class="i18n-en">After two years of preparation, we opened a small coffee roastery in the bakery's courtyard.</p>
+          <div class="post-full" id="post-full-3">
+            <p class="i18n-mk">Пржилницата има капацитет од 12 килограми по серија. Секоја серија се пржи рачно, а профилот на пржење се прилагодува според потеклото на зрната. Со ова, целиот пат на кафето — од зрно до чаша — се одвива во рамките на Алба, а гостите можат да купат и пакувано кафе за дома.</p>
+            <p class="i18n-en">The roastery has a 12-kilogram batch capacity. Every batch is roasted by hand, with the roast profile adjusted to the origin of the beans. With this, the entire journey of the coffee — from bean to cup — now happens within Alba, and guests can also buy bagged coffee to take home.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-3">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-media"><img src="news4.jpg" alt="Нови пецива на менито" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">14.05.2026</span>
+          <h3 class="i18n-mk">Нови пецива на менито</h3>
+          <h3 class="i18n-en">New pastries on the menu</h3>
+          <p class="i18n-mk">Воведовме две нови пецива подготвени според семејни рецепти, достапни секој ден покрај веќе познатите класици.</p>
+          <p class="i18n-en">We introduced two new pastries made from family recipes, available daily alongside our existing classics.</p>
+          <div class="post-full" id="post-full-4">
+            <p class="i18n-mk">Новите пецива вклучуваат ролат со ореви и пита со спанаќ и сирење. Сите се подготвуваат рачно секое утро со истите состојки како и остатокот од менито — домашно тесто, локални јајца и путер без адитиви.</p>
+            <p class="i18n-en">The new pastries include a walnut roll and a spinach and cheese pie. They're all hand-made every morning using the same ingredients as the rest of the menu — house dough, local eggs, and additive-free butter.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-4">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-media tone-warm"><img src="news5.jpg" alt="Прославуваме 12 години Алба" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">02.04.2026</span>
+          <h3 class="i18n-mk">Прославуваме 12 години Алба</h3>
+          <h3 class="i18n-en">Celebrating 12 years of Alba</h3>
+          <p class="i18n-mk">Годинава одбележуваме 12 години од отворањето. По тој повод, за гостите подготвивме специјално издание на леб и попуст за постојаните муштерии.</p>
+          <p class="i18n-en">This year marks 12 years since we opened. To celebrate, we made a special-edition loaf and a discount for our regulars.</p>
+          <div class="post-full" id="post-full-5">
+            <p class="i18n-mk">Специјалното издание леб е печено според истиот рецепт со кој започна Алба во 2012 година, со ражно брашно и семки од сончоглед. Достапен е само во текот на јубилејната недела. Постојаните муштерии добија картичка со попуст од 10% на секоја нарачка над 300 денари.</p>
+            <p class="i18n-en">The special-edition loaf is baked to the same recipe Alba started with in 2012, made with rye flour and sunflower seeds. It's available only during the anniversary week. Regulars received a card offering 10% off any order over 300 denars.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-5">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-media tone-cool"><img src="news6.jpg" alt="Нова соработка со локални фарми" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">19.03.2026</span>
+          <h3 class="i18n-mk">Нова соработка со локални фарми</h3>
+          <h3 class="i18n-en">New partnership with local farms</h3>
+          <p class="i18n-mk">Го проширивме бројот на локални добавувачи од каде набавуваме брашно, млеко и јајца за производите на Алба.</p>
+          <p class="i18n-en">We expanded the number of local suppliers we source flour, milk and eggs from for Alba's products.</p>
+          <div class="post-full" id="post-full-6">
+            <p class="i18n-mk">Сега соработуваме со три семејни фарми во околината на Скопје. Целта е поголема свежина и поддршка на локалната економија. Промената веќе се чувствува во вкусот на лебот и  пецивата.</p>
+            <p class="i18n-en">We now work with three family farms around Skopje. The goal is greater freshness and supporting the local economy. The change is already noticeable in the taste of the bread and the pastries.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-6">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap footer-grid">
+    <a href="index.html" class="logo" style="font-size:19px;">
+      <svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <ul class="footer-links">
+      <li><a href="index.html#about" class="i18n-mk">За нас</a><a href="index.html#about" class="i18n-en">About</a></li>
+      <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+      <li><a href="index.html#contact" class="i18n-mk">Контакт</a><a href="index.html#contact" class="i18n-en">Contact</a></li>
+      <li><a href="cookie-policy.html" class="i18n-mk">Политика за колачиња</a><a href="cookie-policy.html" class="i18n-en">Cookie policy</a></li>
+    </ul>
+    <div class="footer-small">
+      © 2026 Алба. <span class="i18n-mk">Сите права задржани.</span><span class="i18n-en">All rights reserved.</span>
+      <span class="version-badge"> · v1.6.0</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookie-banner" role="dialog" aria-live="polite">
+  <h4 class="i18n-mk">Користиме колачиња 🍪</h4>
+  <h4 class="i18n-en">We use cookies 🍪</h4>
+  <p class="i18n-mk">Оваа страница користи колачиња за основно функционирање и за анализа на посетеноста. Можете да ги прифатите сите или само неопходните. Повеќе во <a href="cookie-policy.html" >Политиката за колачиња</a>.</p>
+  <p class="i18n-en">This site uses cookies for basic functionality and traffic analysis. You can accept all cookies or only the necessary ones. More in our <a href="cookie-policy.html" >Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookie-accept"><span class="i18n-mk">Прифати сè</span><span class="i18n-en">Accept all</span></button>
+    <button class="btn btn-outline on-light" id="cookie-necessary" ><span class="i18n-mk">Само неопходни</span><span class="i18n-en">Necessary only</span></button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

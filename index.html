@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="mk" data-lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Алба — Кафе-Пекара</title>
+<meta name="description" content="Алба — занаетчиска кафе-пекара со свежо печен леб, пецива и специјалитетно кафе.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="Алба — почетна">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about" class="i18n-mk">За нас</a><a href="#about" class="i18n-en">About</a></li>
+        <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+        <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+        <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+        <li><a href="#contact" class="i18n-mk">Контакт</a><a href="#contact" class="i18n-en">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Смени јазик / Switch language">MK / EN</button>
+      <button class="burger" id="burger" aria-label="Мени" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <ul class="nav-links" id="mobile-links" style="display:none; flex-direction:column; padding:0 28px 20px; gap:16px;">
+    <li><a href="#about" class="i18n-mk">За нас</a><a href="#about" class="i18n-en">About</a></li>
+    <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+    <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+    <li><a href="news.html" class="i18n-mk">Новости</a><a href="news.html" class="i18n-en">News</a></li>
+    <li><a href="#contact" class="i18n-mk">Контакт</a><a href="#contact" class="i18n-en">Contact</a></li>
+  </ul>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero" style="padding-top:40px;">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>
+          <span class="i18n-mk">Мирисот на свежо<br>печен леб <em>те буди.</em></span>
+          <span class="i18n-en">The smell of fresh<br>bread <em>wakes you up.</em></span>
+        </h1>
+        <p class="hero-sub i18n-mk">Алба е соседско кафуле и пекара каде сè се подготвува со љубов и внимание. Вашето место за свежо испечени пецива, леб и утринско кафе.</p>
+        <p class="hero-sub i18n-en">Alba is a neighbourhood café and bakery where everything is made with love and care. Your go-to spot for freshly baked pastries, bread, and your morning coffee.</p>
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-primary"><span class="i18n-mk">Види мени</span><span class="i18n-en">View menu</span></a>
+          <a href="#contact" class="btn btn-outline"><span class="i18n-mk">Резервирај маса</span><span class="i18n-en">Book a table</span></a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="first.jpg" width="400" height="580">
+      </div>
+    </div>
+  </div>
+  <div class="hero-strip">
+    <div class="wrap">
+      <div class="hero-strip-inner">
+        <div class="hero-strip-item">
+          <span class="i18n-mk">Работно време</span><span class="i18n-en">Opening hours</span>
+          <strong>Пон–Нед 07:00–20:00</strong>
+        </div>
+        <div class="hero-strip-item">
+          <span class="i18n-mk">Локација</span><span class="i18n-en">Location</span>
+          <strong class="i18n-mk">ул. Македонија бр. 14, Скопје</strong>
+          <strong class="i18n-en">14 Makedonija St, Skopje</strong>
+        </div>
+        <div class="hero-strip-item">
+          <span class="i18n-mk">Резервации</span><span class="i18n-en">Reservations</span>
+          <strong>+389 70 123 456</strong>
+        </div>
+        <div class="hero-strip-item">
+          <span class="i18n-mk">Секој ден свежо</span><span class="i18n-en">Fresh daily</span>
+          <strong class="i18n-mk">12 вида леб и пецива</strong>
+          <strong class="i18n-en">12 kinds of bread & pastry</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div class="about-art reveal">
+      <img src="second.jpg" width="300" height="400">
+    </div>
+    <div class="reveal">
+      <div class="eyebrow"><span class="i18n-mk">За нас</span><span class="i18n-en">About us</span></div>
+      <p class="about-lead i18n-mk">Домашно подготвено, со љубов, грижа и посветеност. Ги избираме најквалитетните состојки, служиме свежо подготвени производи во текот на целиот ден.</p>
+      <p class="about-lead i18n-en">Homemade with love, care and dedication. We handpick the highest-quality ingredients and serve freshly prepared products all day long.</p>
+
+      <p class="about-lead i18n-mk">Алба започна како мала семејна фурна во 2012 година. Денес сме кафе-пекара со сопствена мала пржилница за кафе и рецепти што се пренесуваат низ генерации.</p>
+      <p class="about-lead i18n-en">Alba started as a small family bakery in 2012. Today we're a coffee-bakery with our own micro coffee roastery and recipes passed through generations.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="num">14</div>
+          <div class="lbl i18n-mk">Години искуство</div>
+          <div class="lbl i18n-en">Years of craft</div>
+        </div>
+        <div class="stat">
+          <div class="num">100%</div>
+          <div class="lbl i18n-mk">Домашен квасец</div>
+          <div class="lbl i18n-en">Sourdough starter</div>
+        </div>
+        <div class="stat">
+          <div class="num">05:30</div>
+          <div class="lbl i18n-mk">Почеток на печење</div>
+          <div class="lbl i18n-en">Baking starts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCHEDULE ================= -->
+<section class="schedule">
+  <div class="wrap reveal">
+    <div class="eyebrow"><span class="i18n-mk">Дневен распоред</span><span class="i18n-en">Daily bake schedule</span></div>
+    <h2 class="i18n-mk">Знаеш точно кога излегува топол лебот.</h2>
+    <h2 class="i18n-en">You'll know exactly when it comes out warm.</h2>
+    <p class="schedule-note i18n-mk">Печеме во серии низ целиот ден, секогаш свежо. Еве кога излегува секоја серија од рерната.</p>
+    <p class="schedule-note i18n-en">We bake in batches all day long, so it's always fresh, never pre-packed. Here's when each batch comes out of the oven.</p>
+
+    <div class="board">
+      <div class="board-row">
+        <div class="board-time">06:00</div>
+        <div class="board-item">
+          <strong class="i18n-mk">'Ржан леб</strong><strong class="i18n-en">Rye sourdough loaf</strong>
+          <span class="i18n-mk">Прва серија, директно од фурна</span>
+          <span class="i18n-en">First batch, straight from the oven</span>
+        </div>
+        <div class="board-tag i18n-mk">Секое утро</div>
+        <div class="board-tag i18n-en">Every morning</div>
+      </div>
+      <div class="board-row">
+        <div class="board-time">08:30</div>
+        <div class="board-item">
+          <strong class="i18n-mk">Кроасани и пецива</strong><strong class="i18n-en">Croissants & viennoiserie</strong>
+          <span class="i18n-mk">Тесто со путер, 27 слоја, рачно превиткувани</span>
+          <span class="i18n-en">Butter dough, 27 layers, hand-folded</span>
+        </div>
+        <div class="board-tag i18n-mk">Ограничена количина</div>
+        <div class="board-tag i18n-en">Limited batch</div>
+      </div>
+      <div class="board-row">
+        <div class="board-time">11:00</div>
+        <div class="board-item">
+          <strong class="i18n-mk">Фокача и сендвич леб</strong><strong class="i18n-en">Focaccia & sandwich bread</strong>
+          <span class="i18n-mk">Со сезонски билки и маслиново масло</span>
+          <span class="i18n-en">With seasonal herbs and olive oil</span>
+        </div>
+        <div class="board-tag i18n-mk">За ручек</div>
+        <div class="board-tag i18n-en">For lunch</div>
+      </div>
+      <div class="board-row">
+        <div class="board-time">16:00</div>
+        <div class="board-item">
+          <strong class="i18n-mk">Слатки пецива</strong><strong class="i18n-en">Sweet pastries</strong>
+          <span class="i18n-mk">Штрудли, колачи и дневен специјалитет</span>
+          <span class="i18n-en">Strudels, cakes and the daily special</span>
+        </div>
+        <div class="board-tag i18n-mk">Попладне</div>
+        <div class="board-tag i18n-en">Afternoon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <div>
+        <div class="eyebrow"><span class="i18n-mk">Мени</span><span class="i18n-en">Menu</span></div>
+        <h2 class="i18n-mk">Од рерна и од машина за кафе.</h2>
+        <h2 class="i18n-en">From the oven and the espresso machine.</h2>
+      </div>
+      <p class="about-lead" style="max-width:340px; margin:0;">
+        <span class="i18n-mk">Ова се само неколку омилени. Целото мени има над 25 производи во 6 категории.</span>
+        <span class="i18n-en">These are just a few favourites. The full menu has 25+ products in 6 categories.</span>
+      </p>
+    </div>
+
+    <div class="menu-cats reveal">
+      <div class="menu-cat">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 18h16M6 18V9a6 6 0 0 1 12 0v9" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Леб</span><span class="i18n-en">Bread</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">'Ржан леб</div><div class="menu-item-name i18n-en">Rye sourdough</div>
+            <div class="menu-item-desc i18n-mk">700 г, 'ржано и пченично брашно</div>
+            <div class="menu-item-desc i18n-en">700 g, rye and wheat flour</div>
+          </div>
+          <div class="menu-item-price">160 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Домашен бел леб</div><div class="menu-item-name i18n-en">Country white loaf</div>
+            <div class="menu-item-desc i18n-mk">800 г, со крцкава кора</div>
+            <div class="menu-item-desc i18n-en">800 g, crackling crust</div>
+          </div>
+          <div class="menu-item-price">120 ден</div>
+        </div>
+      </div>
+
+      <div class="menu-cat">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V4Z" stroke="var(--ink-3)" stroke-width="1.6"/><path d="M17 6h2a2 2 0 0 1 0 4h-2M6 20h9" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Пецива</span><span class="i18n-en">Pastries</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Путер кроасан</div><div class="menu-item-name i18n-en">Butter croissant</div>
+            <div class="menu-item-desc i18n-mk">Класичен, 27 слоја</div>
+            <div class="menu-item-desc i18n-en">Classic, 27 layers</div>
+          </div>
+          <div class="menu-item-price">90 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name i18n-mk">Штрудла со јаболка</div><div class="menu-item-name i18n-en">Apple strudel</div>
+            <div class="menu-item-desc i18n-mk">Домашно лиснато тесто</div>
+            <div class="menu-item-desc i18n-en">Hand-stretched dough</div>
+          </div>
+          <div class="menu-item-price">100 ден</div>
+        </div>
+      </div>
+
+      <div class="menu-cat">
+        <h3><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z" stroke="var(--ink-3)" stroke-width="1.6"/><path d="M17 11h2a2 2 0 0 1 0 4h-2M8 4c-1 1-1 2 0 3M12 4c-1 1-1 2 0 3" stroke="var(--ink-3)" stroke-width="1.6"/></svg><span class="i18n-mk">Кафе</span><span class="i18n-en">Coffee</span></h3>
+        <div class="menu-item">
+          <div><div class="menu-item-name">Espresso</div>
+            <div class="menu-item-desc i18n-mk">Сопствена пржилница</div>
+            <div class="menu-item-desc i18n-en">Our own roast</div>
+          </div>
+          <div class="menu-item-price">70 ден</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item-name">Flat White</div>
+            <div class="menu-item-desc i18n-mk">Со млеко од локална фарма</div>
+            <div class="menu-item-desc i18n-en">Local farm milk</div>
+          </div>
+          <div class="menu-item-price">110 ден</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cta reveal">
+      <a href="menu.html" class="btn btn-outline on-light"><span class="i18n-mk">Види го целото мени →</span><span class="i18n-en">View full menu →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section id="team" class="team">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow"><span class="i18n-mk">Тим</span><span class="i18n-en">Team</span></div>
+      <h2 class="i18n-mk">Рацете зад лебот.</h2>
+      <h2 class="i18n-en">The hands behind the bread.</h2>
+    </div>
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="avatar">ВЈ</div>
+        <h4>Верица Јовановска</h4>
+        <span class="team-role i18n-mk">Основач и главен пекар</span>
+        <span class="team-role i18n-en">Founder & head baker</span>
+        <p class="team-bio i18n-mk">Го учеше занаетот од својата баба и ја отвори Алба во 2012 година.</p>
+        <p class="team-bio i18n-en">Learned the craft from her grandmother and opened Alba in 2012.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar">ДТ</div>
+        <h4>Дарко Трајковски</h4>
+        <span class="team-role i18n-mk">Мајстор за кафе</span>
+        <span class="team-role i18n-en">Head roaster & barista</span>
+        <p class="team-bio i18n-mk">Ги избира и ги пржи зрната во малата пржилница зад пекарата.</p>
+        <p class="team-bio i18n-en">Sources and roasts the beans in the micro-roastery out back.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar">МС</div>
+        <h4>Марија Стојанова</h4>
+        <span class="team-role i18n-mk">Слатки пецива</span>
+        <span class="team-role i18n-en">Pastry chef</span>
+        <p class="team-bio i18n-mk">Одговорна за штрудлите, колачите и дневниот специјалитет.</p>
+        <p class="team-bio i18n-en">Responsible for strudels, cakes and the daily special.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar">ИН</div>
+        <h4>Игор Николовски</h4>
+        <span class="team-role i18n-mk">Услуга на гости</span>
+        <span class="team-role i18n-en">Front of house</span>
+        <p class="team-bio i18n-mk">Прво лице кое ќе те пречека наутро со насмевка и препорака.</p>
+        <p class="team-bio i18n-en">The first face you'll see in the morning, with a smile and a recommendation.</p>
+      </div>
+    </div>
+    <div class="section-cta reveal">
+      <a href="team.html" class="btn btn-outline on-light"><span class="i18n-mk">Види го целиот тим →</span><span class="i18n-en">Meet the full team →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG / NEWS ================= -->
+<section id="blog" class="blog">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow"><span class="i18n-mk">Новости</span><span class="i18n-en">News</span></div>
+      <h2 class="i18n-mk">Од фурната, до тебе.</h2>
+      <h2 class="i18n-en">From the oven, to you.</h2>
+    </div>
+    <div class="blog-grid reveal">
+      <article class="post">
+        <div class="post-media"><img src="news1.jpg" alt="Нов сезонски специјалитет: леб со тиква" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">12.07.2026</span>
+          <h3 class="i18n-mk">Нов сезонски специјалитет: леб со тиква</h3>
+          <h3 class="i18n-en">New seasonal special: pumpkin bread</h3>
+          <p class="i18n-mk">Од оваа недела воведуваме леб со печена тиква и семки од тиква, достапен само во есенските месеци.</p>
+          <p class="i18n-en">Starting this week we're introducing roasted pumpkin bread with pumpkin seeds, available only in the autumn months.</p>
+          <div class="post-full" id="post-full-1">
+            <p class="i18n-mk">Тестото се меси со пире од печена тиква, а одозгора се посипува со препечени семки од тиква и сусам. Лебот е сладок и одлично се вклопува со путер и мед. Достапен е секој ден, во ограничена количина од по 25 парчиња, се додека трае сезоната на тиква — обично од средина на септември до крајот на ноември.</p>
+            <p class="i18n-en">The dough is mixed with roasted pumpkin purée instead of part of the water, then topped with toasted pumpkin seeds and a sesame blend. The bread is sweet, and pairs perfectly with butter or honey. Available daily in a limited batch of 25 loaves, for as long as pumpkin season lasts — usually mid-September through late November.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-1">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post-media"><img src="news2.jpg" alt="Работилница: печење домашен леб" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">28.06.2026</span>
+          <h3 class="i18n-mk">Работилница: печење домашен леб</h3>
+          <h3 class="i18n-en">Workshop: baking bread at home</h3>
+          <p class="i18n-mk">Секоја последна сабота во месецот организираме работилница за квасец и домашно печење, со ограничен број на места.</p>
+          <p class="i18n-en">Every last Saturday of the month we host a sourdough & home-baking workshop, with limited spots.</p>
+          <div class="post-full" id="post-full-2">
+            <p class="i18n-mk">Работилницата трае околу три часа и вклучува подготовка на сопствен квасец за носење дома, замесување и обликување леб, како и објаснување на процесот на ферментација. Учеството чини 900 денари по лице и вклучува сите состојки, материјали и кафе или чај. Групата е ограничена на 10 луѓе за да секој добие лично внимание. Пријавување преку контакт формата на почетната страница или на телефонскиот број наведен во делот „Контакт“.</p>
+            <p class="i18n-en">The workshop runs about three hours and covers preparing your own sourdough starter to take home, kneading and shaping bread, and understanding fermentation. Participation costs 900 denars per person and includes all ingredients, materials, and coffee or tea. The group is capped at 10 people for hands-on attention. Sign up via the contact form on the home page or the phone number listed in the Contact section.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-2">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post-media"><img src="news3.jpg" alt="Алба сега со сопствена пржилница" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-date">03.06.2026</span>
+          <h3 class="i18n-mk">Алба сега со сопствена пржилница</h3>
+          <h3 class="i18n-en">Alba now roasts its own coffee</h3>
+          <p class="i18n-mk">По две години подготовка, отворивме мала пржилница за кафе во дворот на пекарата.</p>
+          <p class="i18n-en">After two years of preparation, we opened a small coffee roastery in the bakery's courtyard.</p>
+          <div class="post-full" id="post-full-3">
+            <p class="i18n-mk">Пржилницата има капацитет од 12 килограми по серија. Секоја серија се пржи рачно, а профилот на пржење се прилагодува според потеклото на зрната. Со ова, целиот пат на кафето — од зрно до чашка — се одвива во рамките на Алба, а гостите можат да купат и пакувано кафе за дома.</p>
+            <p class="i18n-en">The roastery has a 12-kilogram batch capacity. Every batch is roasted by hand, with the roast profile adjusted to the origin of the beans. With this, the entire journey of the coffee — from bean to cup — now happens within Alba, and guests can also buy bagged coffee to take home.</p>
+          </div>
+          <button type="button" class="post-link post-toggle" data-target="post-full-3">
+            <span class="i18n-mk more-label">Прочитај повеќе →</span>
+            <span class="i18n-en more-label">Read more →</span>
+            <span class="i18n-mk less-label" hidden>Затвори ×</span>
+            <span class="i18n-en less-label" hidden>Close ×</span>
+          </button>
+        </div>
+      </article>
+    </div>
+    <div class="section-cta reveal">
+      <a href="news.html" class="btn btn-outline on-light"><span class="i18n-mk">Види ги сите новости →</span><span class="i18n-en">View all news →</span></a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow"><span class="i18n-mk">Контакт</span><span class="i18n-en">Contact</span></div>
+    <h2 class="i18n-mk">Резервирај маса или прашај нешто.</h2>
+    <h2 class="i18n-en">Book a table or ask us anything.</h2>
+
+    <div class="contact-grid">
+      <div>
+        <div id="form-success">
+          <span class="i18n-mk">Ви благодариме! Пораката е испратена — ќе ви одговориме наскоро.</span>
+          <span class="i18n-en">Thank you! Your message has been sent — we'll get back to you soon.</span>
+        </div>
+        <form id="contact-form" novalidate>
+          <div class="field" id="field-name">
+            <label for="name"><span class="i18n-mk">Име и презиме</span><span class="i18n-en">Full name</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <div class="field-error i18n-mk">Ве молиме внесете го вашето име.</div>
+            <div class="field-error i18n-en">Please enter your name.</div>
+          </div>
+          <div class="field" id="field-email">
+            <label for="email"><span class="i18n-mk">Е-пошта</span><span class="i18n-en">Email</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <div class="field-error i18n-mk">Ве молиме внесете валидна е-пошта.</div>
+            <div class="field-error i18n-en">Please enter a valid email.</div>
+          </div>
+          <div class="field" id="field-subject">
+            <label for="subject"><span class="i18n-mk">Тема</span><span class="i18n-en">Subject</span></label>
+            <select id="subject" name="subject">
+              <option class="i18n-mk" value="reservation">Резервација на маса</option>
+              <option class="i18n-en" value="reservation">Table reservation</option>
+              <option class="i18n-mk" value="catering">Кетеринг / нарачка</option>
+              <option class="i18n-en" value="catering">Catering / order</option>
+              <option class="i18n-mk" value="other">Друго</option>
+              <option class="i18n-en" value="other">Other</option>
+            </select>
+          </div>
+          <div class="field" id="field-message">
+            <label for="message"><span class="i18n-mk">Порака</span><span class="i18n-en">Message</span></label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="field-error i18n-mk">Ве молиме внесете порака.</div>
+            <div class="field-error i18n-en">Please enter a message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary"><span class="i18n-mk">Испрати порака</span><span class="i18n-en">Send message</span></button>
+          <p class="form-note">
+            <span class="i18n-mk">Со испраќање на формата се согласувате со нашата <a href="cookie-policy.html">Политика за приватност и колачиња</a>.</span>
+            <span class="i18n-en">By submitting this form you agree to our <a href="cookie-policy.html">Privacy & Cookie Policy</a>.</span>
+          </p>
+        </form>
+      </div>
+
+      <div>
+        <div class="info-block">
+          <h4 class="i18n-mk">Адреса</h4><h4 class="i18n-en">Address</h4>
+          <p class="i18n-mk">ул. Македонија бр. 14, 1000 Скопје</p>
+          <p class="i18n-en">14 Makedonija St, 1000 Skopje</p>
+        </div>
+        <div class="info-block">
+          <h4 class="i18n-mk">Контакт</h4><h4 class="i18n-en">Contact</h4>
+          <p>Тел: +389 70 123 456</p>
+          <p>Email: zdravo@alba.mk</p>
+        </div>
+        <div class="info-block">
+          <h4 class="i18n-mk">Работно време</h4><h4 class="i18n-en">Opening hours</h4>
+          <p><span class="i18n-mk">Понеделник – Недела</span><span class="i18n-en">Monday – Sunday</span>: 07:00 – 20:00</p>
+        </div>
+        <div class="info-block">
+          <h4 class="i18n-mk">Следи не</h4><h4 class="i18n-en">Follow us</h4>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.42.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.63.42 1.36.47 2.42.05 1.06.06 1.42.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.42a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.42.47-1.06.05-1.42.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.42-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.42C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.42.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45 2.54c.63-.25 1.36-.42 2.42-.47C8.94 2.01 9.3 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.4 6.6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.7-1.6h1.5V3.2C16.4 3.1 15.3 3 14.1 3c-2.5 0-4.2 1.5-4.2 4.3v2.5H7.2v3.2h2.7v8h3.6Z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3h2.6c.2 1.6 1.3 3 3.4 3.3V9c-1.3 0-2.6-.4-3.6-1.1v6.4a5.3 5.3 0 1 1-5.3-5.3c.2 0 .4 0 .6.03v2.7a2.6 2.6 0 1 0 2 2.5V3Z"/></svg></a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe loading="lazy" title="Мапа — локација на Алба"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=21.42%2C41.99%2C21.44%2C42.01&layer=mapnik&marker=42.0,21.43"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap footer-grid">
+    <a href="#home" class="logo" style="font-size:19px;">
+      <svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M12 2c0 4-3 5-3 9a3 3 0 0 0 6 0c0-4-3-5-3-9Z" stroke="var(--ink)" stroke-width="1.4"/><path d="M12 13v9M9 22h6" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Алба
+    </a>
+    <ul class="footer-links">
+      <li><a href="#about" class="i18n-mk">За нас</a><a href="#about" class="i18n-en">About</a></li>
+      <li><a href="menu.html" class="i18n-mk">Мени</a><a href="menu.html" class="i18n-en">Menu</a></li>
+      <li><a href="team.html" class="i18n-mk">Тим</a><a href="team.html" class="i18n-en">Team</a></li>
+      <li><a href="#contact" class="i18n-mk">Контакт</a><a href="#contact" class="i18n-en">Contact</a></li>
+      <li><a href="cookie-policy.html" class="i18n-mk">Политика за колачиња</a><a href="cookie-policy.html" class="i18n-en">Cookie policy</a></li>
+    </ul>
+    <div class="footer-small">
+      © 2026 Алба. <span class="i18n-mk">Сите права задржани.</span><span class="i18n-en">All rights reserved.</span>
+      <span class="version-badge"> · v1.6.0</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookie-banner" role="dialog" aria-live="polite">
+  <h4 class="i18n-mk">Користиме колачиња 🍪</h4>
+  <h4 class="i18n-en">We use cookies 🍪</h4>
+  <p class="i18n-mk">Оваа страница користи колачиња за основно функционирање и за анализа на посетеноста. Можете да ги прифатите сите или само неопходните. Повеќе во <a href="cookie-policy.html" >Политиката за колачиња</a>.</p>
+  <p class="i18n-en">This site uses cookies for basic functionality and traffic analysis. You can accept all cookies or only the necessary ones. More in our <a href="cookie-policy.html" >Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookie-accept"><span class="i18n-mk">Прифати сè</span><span class="i18n-en">Accept all</span></button>
+    <button class="btn btn-outline on-light" id="cookie-necessary" ><span class="i18n-mk">Само неопходни</span><span class="i18n-en">Necessary only</span></button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
